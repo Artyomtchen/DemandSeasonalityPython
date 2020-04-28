@@ -25,7 +25,7 @@ from calendar import monthrange
 # Predefined variables
 # =============================================================================
 
-path = r'C:\Users\artyom\Desktop\python/'
+path = r'C:\Users\.....'
 input_filename = 'Demand seasonality project Python.xlsx'
 output_filename = 'Seasonality_ratios.xlsx'
 
@@ -152,4 +152,3 @@ dfksa=final[final['Country']=='Saudi Arabia']
 writer=pd.ExcelWriter(path+output_filename, engine='xlsxwriter')
 final.to_excel(writer, sheet_name='Sheet1')
 writer.save()
-#sys.exit() - used to break down code (code runs until this point if inserted in the code)
